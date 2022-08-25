@@ -1,0 +1,48 @@
+.* {
+    margin: 0;
+    padding: 0;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: 20vw 60vw 20vw;
+    grid-template-rows: 20vh 40vh 40vh;
+}
+
+.header {
+    grid-area: 1 / 2 / 2 / 4;
+    background-color: blue;
+
+}
+
+.sidebar {
+    grid-area: 1 / 1 / -1 / 2;
+    background-color: rgb(0, 213, 255);
+
+}
+
+.cards {
+    grid-area: 2 / 2 / 4 / 3;
+    background-color: green;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 400px);
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background-color: white;
+}
+
+.announcements {
+    grid-area: 2 / 3 / 3 / 4;
+    background-color: purple;
+
+}
+
+.trending {
+    grid-area: 3 / 3 / 4 / 4/;
+    background-color: aqua;
+
+}
